@@ -6,6 +6,9 @@
       </h1>
       <h2 id="tag">技术宅，喜欢二次元</h2>
     </div>
+    <div id="nav">
+
+    </div>
   </div>
 </template>
 
@@ -26,9 +29,33 @@ export default {
   position:relative;
 
   #logo-text{
+    position: absolute;
+    top:52px;
+    left: 0px;
     #logo{
-      font-family: $my_ttf2
+      font-family: $my_ttf2;
+      font-size: $my_logo_size;
+      font-weight: normal;
+      -webkit-text-stroke: 0.5px;
+      a{
+        display: block;
+        color:$my_gray2;
+        transition: color 0.2s ease-in-out;
+        &:hover{
+          color:$my_violet;
+        }
+      }
     }
+    #tag{
+      font-size: 10px;
+      font-weight: normal;
+      color:$my_gray6;
+      margin-top:10px;
+    }
+  }
+
+  #nav{
+    
   }
 }
 </style>
