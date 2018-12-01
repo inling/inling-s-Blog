@@ -14,12 +14,4 @@
   font-family:'Matchbook';
   src:url('./assets/font/Matchbook.ttf');
 }
-
-  body{
-    font-family: $my_ttf1;
-    background: $my_gray1;
-    a{
-      text-decoration: none;
-    }
-  }
 </style>
