@@ -1,11 +1,10 @@
 <template>
   <div id="ilHeader">
-    <div id="logo">
-      <h1 id="logo_text">
-        <router-link to="/">INLING's blog</router-link>
-      </h1>
-      <h2 id="logo_tag">技术宅，喜欢二次元</h2>
-    </div>
+    <my-logo>
+      <my-logo-text slot="MyLogoText"></my-logo-text>
+      <my-logo-tag slot="MyLogoTag"></my-logo-tag>
+    </my-logo>
+
     <div id="global_nav">
       <ul id="global_nav_ul">
         <li v-for="(item,i) in nav_list" :key="i">
@@ -17,6 +16,9 @@
 </template>
 
 <script>
+import MyLogo from '@/components/MyLogo/MyLogo.vue';
+import MyLogoText from '@/components/MyLogo/MyLogoText.vue';
+import MyLogoTag from '@/components/MyLogo/MyLogoTag.vue';
 export default {
   data(){
     return {
@@ -58,6 +60,11 @@ export default {
           '2':[]},
       ]
     }
+  },
+  components:{
+    MyLogo,
+    MyLogoText,
+    MyLogoTag
   }
 }
 </script>
@@ -69,33 +76,6 @@ export default {
   height:150px;
   margin:0 auto;
   position:relative;
-
-  #logo{
-    position: absolute;
-    top:30px;
-    left: 0px;
-    #logo_text{
-      font-family: $my_ttf2;
-      font-size: $my_logo_size;
-      font-weight: normal;
-      -webkit-text-stroke: 0.5px;
-      a{
-        display: block;
-        color:$my_gray2;
-        transition: color 0.2s ease-in-out;
-        &:hover{
-          color:$my_violet;
-        }
-      }
-    }
-    #logo_tag{
-      font-size: 10px;
-      font-weight: normal;
-      color:$my_gray6;
-      margin-top:10px;
-    }
-  }
-
   #global_nav{
     height:50px;
     position: absolute;
