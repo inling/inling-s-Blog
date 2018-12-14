@@ -1,7 +1,7 @@
 <template>
-    <div id="MyLogo">
-        <slot name="MyLogoText"></slot>
-        <slot name="MyLogoTag"></slot>
+    <div id="InLogo">
+        <slot name="InLogoText"></slot>
+        <slot name="InLogoTag"></slot>
     </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#MyLogo{
+#InLogo{
     position: absolute;
     top:30px;
     left: 0px;

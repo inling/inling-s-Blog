@@ -1,9 +1,9 @@
 <template>
   <div id="ilHeader">
-    <my-logo>
-      <my-logo-text slot="MyLogoText"></my-logo-text>
-      <my-logo-tag slot="MyLogoTag"></my-logo-tag>
-    </my-logo>
+    <in-logo>
+      <in-logo-text slot="InLogoText">INLING's blog</in-logo-text>
+      <in-logo-tag slot="InLogoTag">技术宅，喜欢二次元</in-logo-tag>
+    </in-logo>
 
     <div id="global_nav">
       <ul id="global_nav_ul">
@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import MyLogo from '@/components/MyLogo/MyLogo.vue';
-import MyLogoText from '@/components/MyLogo/MyLogoText.vue';
-import MyLogoTag from '@/components/MyLogo/MyLogoTag.vue';
+import InLogo from '@/components/InLogo/InLogo.vue';
+import InLogoText from '@/components/InLogo/InLogoText.vue';
+import InLogoTag from '@/components/InLogo/InLogoTag.vue';
 export default {
   data(){
     return {
@@ -62,9 +62,9 @@ export default {
     }
   },
   components:{
-    MyLogo,
-    MyLogoText,
-    MyLogoTag
+    InLogo,
+    InLogoText,
+    InLogoTag
   }
 }
 </script>

@@ -1,6 +1,8 @@
 <template>
-    <div id="MyLogoText">
-        <router-link to="/">INLING's blog</router-link>
+    <div id="InLogoText">
+        <router-link to="/">
+            <slot></slot>
+        </router-link>
     </div>
 </template>
 
@@ -13,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#MyLogoText{
+#InLogoText{
     font-family: $my_ttf2;
     font-size: $my_logo_size;
     font-weight: normal;

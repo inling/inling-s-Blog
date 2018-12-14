@@ -1,6 +1,6 @@
 <template>
-    <div id="MyLogoTag">
-        技术宅，喜欢二次元
+    <div id="InLogoTag">
+        <slot></slot>
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#MyLogoTag{
+#InLogoTag{
     font-size: 10px;
     font-weight: normal;
     color:$my_gray6;
