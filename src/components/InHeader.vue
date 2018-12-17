@@ -5,13 +5,19 @@
       <in-logo-tag slot="InLogoTag">技术宅，喜欢二次元</in-logo-tag>
     </in-logo>
 
-    <div id="global_nav">
-      <ul id="global_nav_ul">
-        <li v-for="(item,i) in nav_list" :key="i">
-          <router-link to="/" v-text="item[0][0]"></router-link>
-        </li>
-      </ul>
-    </div>
+    <in-nav>
+      <in-nav-item>
+        <in-nav-item-list>HOME</in-nav-item-list>
+        <in-nav-item-list>文章</in-nav-item-list>
+        <in-nav-item-list>DIARY</in-nav-item-list>
+        <in-nav-item-list>每周歌词</in-nav-item-list>
+        <in-nav-item-list>工具</in-nav-item-list>
+        <in-nav-item-list>留言板</in-nav-item-list>
+        <in-nav-item-list>About</in-nav-item-list>
+      </in-nav-item>
+    </in-nav>
+    
+    
   </div>
 </template>
 
@@ -19,6 +25,9 @@
 import InLogo from '@/components/InLogo/InLogo.vue';
 import InLogoText from '@/components/InLogo/InLogoText.vue';
 import InLogoTag from '@/components/InLogo/InLogoTag.vue';
+import InNav from '@/components/InNav/InNav.vue';
+import InNavItem from '@/components/InNav/InNavItem.vue';
+import InNavItemList from '@/components/InNav/InNavItemList.vue';
 export default {
   data(){
     return {
@@ -64,7 +73,10 @@ export default {
   components:{
     InLogo,
     InLogoText,
-    InLogoTag
+    InLogoTag,
+    InNav,
+    InNavItem,
+    InNavItemList
   }
 }
 </script>
@@ -76,45 +88,6 @@ export default {
   height:150px;
   margin:0 auto;
   position:relative;
-  #global_nav{
-    height:50px;
-    position: absolute;
-    right:0px;
-    top:50px;
-    #global_nav_ul{
-      li{
-        float: left;
-        a{
-          font-size:12px;
-          padding:0 30px;
-          background:$my_gray2;
-          border-left:1px solid $my_gray8;
-          text-align: center;
-          color:$my_gray7;
-          display: block;
-          height:50px;
-          line-height: 50px;
-          transition: all .2s linear;
-          &:hover{
-            background:$my_gray9;
-            color:$my_gray10;
-          }
-        }
-        &:first-child{
-          a{
-            border:none;
-            border-radius:7px 0 0 7px;
-          }
-        }
-        &:last-child{
-          a{
-            border:none;
-            border-radius:0 7px 7px 0;
-          }
-        }
-      }
-    }
-  }
 }
 </style>
 

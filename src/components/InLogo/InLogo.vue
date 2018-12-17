@@ -16,7 +16,7 @@ export default {
 <style lang="scss" scoped>
 #InLogo{
     position: absolute;
-    top:30px;
+    top:35px;
     left: 0px;
 }
 </style>

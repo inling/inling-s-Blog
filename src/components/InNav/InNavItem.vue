@@ -1,5 +1,7 @@
 <template>
-  <div id="InNavItem"></div>
+  <ul id="InNavItem">
+    <slot></slot>
+  </ul>
 </template>
 
 <script>
@@ -11,5 +13,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+
 </style>

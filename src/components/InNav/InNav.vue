@@ -1,6 +1,6 @@
 <template>
   <div id="InNav">
-    
+    <slot></slot>
   </div>
 </template>
 
@@ -13,5 +13,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+#InNav{
+  height:50px;
+  position: absolute;
+  right:0px;
+  top:50px;
+}
 </style>
