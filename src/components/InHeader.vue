@@ -1,5 +1,5 @@
 <template>
-  <div id="ilHeader">
+  <div id="InHeader">
     <in-logo>
       <in-logo-text slot="InLogoText">INLING's blog</in-logo-text>
       <in-logo-tag slot="InLogoTag">技术宅，喜欢二次元</in-logo-tag>
@@ -16,8 +16,7 @@
         <in-nav-item-list>About</in-nav-item-list>
       </in-nav-item>
     </in-nav>
-    
-    
+
   </div>
 </template>
 
@@ -83,7 +82,7 @@ export default {
 
 <style lang="scss" scoped>
 /*头部样式*/
-#ilHeader{
+#InHeader{
   width:1180px;
   height:150px;
   margin:0 auto;

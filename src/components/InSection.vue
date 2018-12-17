@@ -1,5 +1,5 @@
 <template>
-    <div id="ilSection">
+    <div id="InSection">
         section
     </div>
 </template>
@@ -18,8 +18,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    #ilSection{
-        width:1180px;
-        margin:0 auto;
-    }
+
 </style>
