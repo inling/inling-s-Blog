@@ -1,6 +1,9 @@
 <template>
   <div id="InPanel" :style="{width:panelWidth,height:panelHeight}">
-    <slot></slot>
+    <slot name="InFace"></slot>
+    <slot name="InGeneralInfo"></slot>
+    <slot name="InPanelTitle"></slot>
+    <slot name="InPanelItem"></slot>
   </div>
 </template>
 
