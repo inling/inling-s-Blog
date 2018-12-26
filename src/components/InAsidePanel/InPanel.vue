@@ -13,8 +13,8 @@ export default {
     return {}
   },
   props:{
-    panelWidth:Number,
-    panelHeight:Number
+    panelWidth:String,
+    panelHeight:String
   }
 }
 </script>
@@ -24,5 +24,6 @@ export default {
   border-radius:6px;
   box-shadow: 0 0 4px rgba(5,5,5,0.3);
   transition: 0.3s background ease;
+  overflow: hidden;
 }
 </style>
