@@ -39,21 +39,11 @@
         知识点
       </in-panel-title>
       <in-panel-item slot="InPanelItem">
-        <in-panel-item-list>
-          HTML 5
-        </in-panel-item-list>
-        <in-panel-item-list>
-          CSS 3
-        </in-panel-item-list>
-        <in-panel-item-list>
-          ES6
-        </in-panel-item-list>
-        <in-panel-item-list>
-          VUE.JS
-        </in-panel-item-list>
-        <in-panel-item-list>
-          REACT
-        </in-panel-item-list>
+        <in-panel-item-list>HTML 5</in-panel-item-list>
+        <in-panel-item-list>CSS 3</in-panel-item-list>
+        <in-panel-item-list>ES6</in-panel-item-list>
+        <in-panel-item-list>VUE.JS</in-panel-item-list>
+        <in-panel-item-list>REACT</in-panel-item-list>
       </in-panel-item>
     </in-panel>
   </div>

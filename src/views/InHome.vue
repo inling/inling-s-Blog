@@ -2,8 +2,9 @@
   <div id="InHome">
     <in-header></in-header>
     <div id="InBody"> 
-      <in-aside></in-aside>
-      <InSection></InSection>
+      <in-aside-left></in-aside-left>
+      <in-section></in-section>
+      <in-aside-right></in-aside-right>
     </div>
   </div>
 </template>
@@ -11,12 +12,14 @@
 <script>
 // @ is an alias to /src
 import InHeader from '@/components/InHeader.vue';
-import InAside from '@/components/InAside.vue';
+import InAsideLeft from '@/components/InAsideLeft.vue';
+import InAsideRight from '@/components/InAsideRight.vue';
 export default {
   name: 'home',
   components: {
     InHeader,
-    InAside,
+    InAsideLeft,
+    InAsideRight,
     InSection:()=>import('@/components/InSection.vue')
   }
 }
