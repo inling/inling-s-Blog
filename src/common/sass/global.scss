@@ -12,4 +12,9 @@ body{
   ul{
     list-style: none
   }
+  .icon{
+    background-size:cover !important;
+    display:inline-block;
+    vertical-align: bottom;
+  }
 }

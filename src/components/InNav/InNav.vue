@@ -19,4 +19,9 @@ export default {
   right:0px;
   top:50px;
 }
+@media screen and (max-width: 1180px) {
+    #InNav{
+        top:40px;
+    }
+}
 </style>

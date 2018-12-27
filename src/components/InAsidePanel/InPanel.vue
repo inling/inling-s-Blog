@@ -23,6 +23,7 @@ export default {
 #InPanel{
   border-radius:6px;
   box-shadow: 0 0 4px rgba(5,5,5,0.3);
+  background: white;
   transition: 0.3s background ease;
   overflow: hidden;
 }

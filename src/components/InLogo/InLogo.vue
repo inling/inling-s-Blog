@@ -19,4 +19,9 @@ export default {
     top:40px;
     left: 0px;
 }
+@media screen and (max-width: 1180px) {
+    #InLogo{
+        left: 20px;
+    }
+}
 </style>
