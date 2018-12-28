@@ -31,6 +31,10 @@
           <i slot="icon" class="icon movies"></i>
           电影清单
         </in-panel-item-list>
+        <in-panel-item-list>
+          <i slot="icon" class="icon music"></i>
+          古风音乐
+        </in-panel-item-list>
       </in-panel-item>
     </in-panel>
     <in-panel panelWidth="210px" style="margin-top:20px">
@@ -94,10 +98,16 @@ export default {
     width: 18px;
     height: 18px;
   }
+  .music{
+    background: url('../assets/icon/music.png') no-repeat center center;
+    width: 18px;
+    height: 18px;
+  }
   .topic{
     background: url('../assets/icon/topic.png') no-repeat center center;
     width: 18px;
     height: 18px;
   }
+
 }
 </style>

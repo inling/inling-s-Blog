@@ -1,7 +1,7 @@
 <template>
     <div id="InSection">
-        <in-s-panel panelWidth="732px" panelHeight="200px">
-            <div slot="background" class="bg-img"></div>
+        <in-s-panel panelWidth="682px" panelHeight="200px">
+            <!--<div slot="background" class="bg-img"></div>-->
         </in-s-panel>
     </div>
 </template>

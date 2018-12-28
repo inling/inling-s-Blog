@@ -4,6 +4,7 @@
     <slot name="InGeneralInfo"></slot>
     <slot name="InPanelTitle"></slot>
     <slot name="InPanelItem"></slot>
+    <slot name="InCalendar"></slot>
   </div>
 </template>
 
