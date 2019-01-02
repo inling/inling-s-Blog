@@ -22,4 +22,8 @@
   font-family: 'Meng Ai';
   src: url('./assets/font/MengAi.ttf');
 }
+@font-face {
+  font-family: 'Pinecone';
+  src: url('./assets/font/pinecone.ttf');
+}
 </style>
