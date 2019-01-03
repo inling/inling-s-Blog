@@ -1,7 +1,9 @@
 <template>
   <div id="InTextarea">
     <textarea name="something" :style="{width:areaWidth,height:areaHeight}" :placeholder="areaPlaceholder"></textarea>
-    <slot name="photoUpload"></slot>
+    <div class="pu">
+      <slot name="photoUpload"></slot>
+    </div>
   </div>
 </template>
 
@@ -24,6 +26,7 @@ export default {
   width: 100%;
   height:100%;
   padding:6px 5px 5px 10px;
+  position:relative;
   [name='something']{
     color:$my_orange;
     font-size: 20px;
@@ -35,6 +38,15 @@ export default {
     border-radius:2px;
     outline: none;
     padding-left:5px;
+    &:focus{
+      background:rgb(255,255,255);
+    }
+  }
+  .pu{
+    position: absolute;
+    right:40px;
+    top:25px;
+    cursor: pointer;
   }
 }
 </style>

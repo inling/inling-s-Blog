@@ -2,6 +2,7 @@
   <div id="InSPanel" :style="{width:panelWidth,height:panelHeight}">
     <slot name="background"></slot>
     <slot name="saySomething"></slot>
+    <slot></slot>
   </div>
 </template>
 
