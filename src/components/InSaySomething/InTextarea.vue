@@ -1,6 +1,6 @@
 <template>
   <div id="InTextarea">
-    <textarea name="something" :style="{width:areaWidth,height:areaHeight}" :placeholder="areaPlaceholder"></textarea>
+    <textarea name="something" :style="{width:areaWidth,height:areaHeight}" :placeholder="areaPlaceholder" @focus="sendMsgFocus" @blur="sendMsgBlur"></textarea>
     <div class="pu">
       <slot name="photoUpload"></slot>
     </div>
@@ -11,6 +11,14 @@
 export default {
   data(){
     return{}
+  },
+  methods:{
+    sendMsgFocus(){
+      this.$emit('stCallBack',true)
+    },
+    sendMsgBlur(){
+      this.$emit('stCallBack',false)
+    }
   },
   props:{
     areaWidth:String,
