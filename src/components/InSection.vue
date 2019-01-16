@@ -22,6 +22,7 @@
 <script>
 import InSPanel from '@/components/InSectionPanel/InSPanel.vue';
 import InTextarea from '@/components/InSaySomething/InTextarea.vue';
+import InDropDownBox from '@/components/InDropDownBox/InDropDownBox.vue';
 
 export default {
     data(){
@@ -42,7 +43,8 @@ export default {
     },
     components:{
         InSPanel,
-        InTextarea
+        InTextarea,
+        InDropDownBox
     }
 }
 </script>
