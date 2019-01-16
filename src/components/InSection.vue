@@ -12,6 +12,7 @@
                         <i class="icon talk"></i>
                     </div>
                     <div class="right">
+                        <in-drop-down-box></in-drop-down-box>
                     </div>
                 </div>
             </transition>

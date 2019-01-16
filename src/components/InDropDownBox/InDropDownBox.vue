@@ -33,6 +33,8 @@ export default {
     position: relative;
     .drapDownBox{
       position: absolute;
+      top:0;
+      left:0;
     }
   }
 }
