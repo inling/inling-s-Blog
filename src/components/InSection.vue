@@ -12,7 +12,13 @@
                         <i class="icon talk"></i>
                     </div>
                     <div class="right">
-                        <in-drop-down-box></in-drop-down-box>
+                        <in-drop-down-box firstItem="所有人可见" @dropShow="dropShowHandler">
+                            可见范围：
+                            <ul slot="option" v-show="isSelectOptionShow">
+                                <li v-for="(item,i) in options" :key="item.value" v-text="item.title"></li>
+                            </ul>
+                        </in-drop-down-box>
+                        <a href="">发表</a>
                     </div>
                 </div>
             </transition>
@@ -29,6 +35,12 @@ export default {
     data(){
         return {
             isPublicSubmitShow:false,
+            isSelectOptionShow:false,
+            options:[
+                {value:0,title:'所有人可见'},
+                {value:1,title:'部分好友可见'},
+                {value:2,title:'仅自己可见'}
+            ]
         }
     },
     methods:{
@@ -40,6 +52,9 @@ export default {
         },
         saySomeBlur(){
             this.isPublicSubmitShow=false;
+        },
+        dropShowHandler(res){
+            this.isSelectOptionShow=res;
         }
     },
     components:{
