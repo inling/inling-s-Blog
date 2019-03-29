@@ -15,10 +15,10 @@
                         <in-drop-down-box firstItem="所有人可见" @dropShow="dropShowHandler">
                             可见范围：
                             <ul slot="option" v-show="isSelectOptionShow">
-                                <li v-for="(item,i) in options" :key="item.value" v-text="item.title"></li>
+                                <li v-for="item in options" :key="item.value" v-text="item.title"></li>
                             </ul>
                         </in-drop-down-box>
-                        <a href="">发表</a>
+                        <router-link to="" class="btn">发表</router-link>
                     </div>
                 </div>
             </transition>
